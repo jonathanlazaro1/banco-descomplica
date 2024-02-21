@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Banco Descomplica</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Banco Descomplica</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Extrato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pagamento</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pix
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Fazer um Pix</a></li>
+                            <li><a class="dropdown-item" href="#">Ler/Criar um QR Code</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Minhas chaves Pix</a></li>
+                            <li><a class="dropdown-item" href="#">Meus contatos Pix</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid bg-secondary p-3 text-center">
+        <h1 class="p-2">Bem-vindo, Jonathan!</h1>
+        <p>Aqui você pode conferir um resumo do seu saldo, suas próximas contas a vencer e o status do seu programa de
+            benefícios XYZ.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card text-bg-primary mb-3">
+                    <div class="card-header" id="cardSaldoData">xxxxxx, dd/mm/yyyy</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Saldo da conta</h5>
+                        <p class="card-text">Seu saldo é de R$ <b>1.234,56</b>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 offset-md-1">
+                <div class="card text-bg-danger mb-3">
+                    <div class="card-header">Contas a vencer</div>
+                    <div class="card-body">
+                        <h5 class="card-title">2 contas vencendo hoje!</h5>
+                        <p class="card-text">O valor total é de <b>R$ 321,00</b>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 offset-md-1">
+                <div class="card text-bg-success mb-3">
+                    <div class="card-header">Seus benefícios XYZ</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Benefícios garantidos!</h5>
+                        <p class="card-text">Você fez <b>56 movimentações</b> este mês.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid bg-success p-3 text-center">
+        <h2 class="p-2">Suas últimas movimentações</h2>
+        <p>As movimentações dos últimos sete dias serão exibidas aqui. Você sempre pode consultar o extrato, se precisar
+            ver outros
+            períodos.</p>
+        <div class="row justify-content-center">
+            <div class="col-xxl-4 col-lg-6 col-md-8">
+                <table class="table table-secondary table-hover">
+                    <thead>
+                        <th>Data</th>
+                        <th>Valor</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>14/02/2024 21:12</td>
+                            <td class="text-success">R$ 150,00</td>
+                        </tr>
+                        <tr>
+                            <td>13/02/2024 15:47</td>
+                            <td class="text-danger">- R$ 345,50</td>
+                        </tr>
+                        <tr>
+                            <td>12/02/2024 08:50</td>
+                            <td class="text-success">R$ 1.039,06</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td>Saldo anterior</td>
+                            <td>R$ 0,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col">
+                <button class="btn btn-secondary">Ver mais...</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid bg-secondary p-3 text-center">
+        <h2>Seus cartões</h2>
+        <p>Aqui você pode acompanhar seus cartões de crédito, ver as últimas movimentações e suas faturas em
+            aberto/fechadas.
+        </p>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card text-bg-success mb-3">
+                    <div class="card-header"><i class="bi bi-credit-card-fill"></i> 5162**80</div>
+                    <div class="card-body">
+                        <p class="card-text">Fatura em aberto: <b>R$ 606,00</b></p>
+                        <p class="card-text">Limite disponível: <b>R$ 2.200,00</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <table class="table table-sm table-success table-hover">
+                    <thead>
+                        <th colspan="3">Suas últimas faturas</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>jan/2024</td>
+                            <td>R$ 123,23</td>
+                            <td><i class="bi bi-patch-check-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>dez/2023</td>
+                            <td>R$ 555,55</td>
+                            <td><i class="bi bi-patch-check-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>nov/2023</td>
+                            <td>R$ 456,54</td>
+                            <td><i class="bi bi-patch-check-fill"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <table class="table table-sm table-success table-hover">
+                    <thead>
+                        <th colspan="3">Suas últimas movimentações</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12/02/2023 19:44</td>
+                            <td>JÃO DELIVERY</td>
+                            <td class="text-danger">- R$ 50,00</td>
+                        </tr>
+                        <tr>
+                            <td>09/02/2023 15:15</td>
+                            <td>SORVETERIA ICE CREAM</td>
+                            <td class="text-danger">- R$ 9,12</td>
+                        </tr>
+                        <tr>
+                            <td>07/02/2023 16:20</td>
+                            <td>LOJA DE ROUPAS ACME</td>
+                            <td class="text-danger">- R$ 263,62</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-success text-center p-3">
+        <p>&copy; 2024 Jonathan Lazaro. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var cardSaldoDataElement = document.getElementById("cardSaldoData");
+            var hoje = new Date();
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var dataFormatada = hoje.toLocaleDateString(undefined, options);
+            cardSaldoDataElement.textContent = dataFormatada;
+        });
+    </script>
+</body>
+
+</html>
